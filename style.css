@@ -1,330 +1,85 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom right, #191970, #4B0082);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #191970, #4B0082);
   color: #d3d3d3;
   text-align: center;
 }
 
 header {
-  padding: 50px 20px;
+  padding: 3rem 1rem 1rem;
 }
 
-.headline {
-  font-size: 32px;
-  font-weight: bold;
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid #00ffff;
-  width: 22ch;
-  margin: auto;
+h1 {
+  font-size: 2rem;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 22ch }
-}
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #00ffff; }
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
-.cta {
-  display: inline-block;
-  margin-top: 20px;
+.btn {
   background-color: teal;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
   transition: transform 0.3s ease;
 }
-.cta:hover {
+
+.btn:hover {
   transform: scale(1.05);
 }
 
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 40px 20px;
-}
-.stat-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  width: 150px;
-  color: #fff;
+.glow {
+  box-shadow: 0 0 15px teal;
 }
 
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  margin: 40px 20px;
-}
-.service {
-  width: 140px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 8px;
-}
-.service img {
-  width: 60px;
-}
-.service h3 {
-  font-size: 16px;
-  margin-top: 10px;
-  color: #fff;
+section {
+  margin: 3rem 1rem;
 }
 
-.float-whatsapp {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
-}
-.float-whatsapp img {
-  width: 100%;
-}
-
-#scrollTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: teal;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-}
-footer {
-  margin: 40px 0 20px;
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom right, #191970, #4B0082);
-  color: #d3d3d3;
-  text-align: center;
-}
-
-header {
-  padding: 50px 20px;
-}
-
-.headline {
-  font-size: 32px;
-  font-weight: bold;
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid #00ffff;
-  width: 22ch;
+.testimonial, .faq {
+  max-width: 600px;
   margin: auto;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 22ch }
-}
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #00ffff; }
+details {
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
-.cta {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: teal;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-}
-.cta:hover {
-  transform: scale(1.05);
-}
-
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 40px 20px;
-}
-.stat-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  width: 150px;
-  color: #fff;
-}
-
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  margin: 40px 20px;
-}
-.service {
-  width: 140px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 8px;
-}
-.service img {
-  width: 60px;
-}
-.service h3 {
-  font-size: 16px;
-  margin-top: 10px;
-  color: #fff;
-}
-
-.float-whatsapp {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
-}
-.float-whatsapp img {
-  width: 100%;
-}
-
-#scrollTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: teal;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-}
-footer {
-  margin: 40px 0 20px;
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom right, #191970, #4B0082);
-  color: #d3d3d3;
-  text-align: center;
-}
-
-header {
-  padding: 50px 20px;
-}
-
-.headline {
-  font-size: 32px;
+summary {
   font-weight: bold;
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid #00ffff;
-  width: 22ch;
-  margin: auto;
+  cursor: pointer;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 22ch }
-}
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #00ffff; }
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: teal;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-}
-.cta:hover {
-  transform: scale(1.05);
-}
-
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 40px 20px;
-}
-.stat-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  width: 150px;
-  color: #fff;
-}
-
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  margin: 40px 20px;
-}
-.service {
-  width: 140px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 8px;
-}
-.service img {
-  width: 60px;
-}
-.service h3 {
-  font-size: 16px;
-  margin-top: 10px;
-  color: #fff;
-}
-
-.float-whatsapp {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
-}
-.float-whatsapp img {
-  width: 100%;
-}
-
-#scrollTopBtn {
+.whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: teal;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 14px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #666;
   color: white;
   border: none;
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  font-size: 20px;
   cursor: pointer;
-  display: none;
-}
-footer {
-  margin: 40px 0 20px;
 }
