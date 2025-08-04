@@ -3,65 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" />
   <title>Deepak Mishra – Trusted Insurance Partner</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #2c5364);
+      color: #ccc;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid teal;
+      width: 22ch;
+      animation: typing 3s steps(22), blink 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 22ch }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .btn {
+      background-color: #00bfa6;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn.pulse {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0, 191, 166, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(0, 191, 166, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 191, 166, 0); }
+    }
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1 class="headline" id="typewriter"></h1>
-    <p class="tagline">Health, Car, Bike – Get the Right Plan with the Right Guidance.</p>
-    <a href="https://wa.me/917999276798?text=Hi%20Deepak%2C%20I%20need%20insurance%20help" class="cta">Chat on WhatsApp</a>
+    <h1>Deepak Mishra</h1>
+    <div class="typewriter">Trusted Insurance Partner</div>
   </header>
 
-  <!-- Animated Stats -->
-  <section class="stats">
-    <div class="stat-card" data-aos="fade-up">
-      <h2>Happy Clients</h2>
-      <p>150+</p>
-    </div>
-    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
-      <h2>Policies Sold</h2>
-      <p>500+</p>
-    </div>
-  </section>
-
   <!-- Service Highlights -->
-  <section class="services">
-    <div class="service" data-aos="fade-up">
-      <img src="icons/health.svg" alt="Health Insurance" />
-      <h3>Health Insurance</h3>
-    </div>
-    <div class="service" data-aos="fade-up" data-aos-delay="100">
-      <img src="icons/car.svg" alt="Car Insurance" />
-      <h3>Car Insurance</h3>
-    </div>
-    <div class="service" data-aos="fade-up" data-aos-delay="200">
-      <img src="icons/bike.svg" alt="Bike Insurance" />
-      <h3>Bike Insurance</h3>
-    </div>
-    <div class="service" data-aos="fade-up" data-aos-delay="300">
-      <img src="icons/commercial.svg" alt="Commercial Vehicle" />
-      <h3>Commercial Insurance</h3>
+  <section style="background:#141414;">
+    <h2>Our Services</h2>
+    <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:40px;margin-top:30px;">
+      <div>
+        <img src="https://img.icons8.com/fluency/48/heart-health.png" alt="Health" />
+        <p>Health Insurance</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/fluency/48/car.png" alt="Car" />
+        <p>Car Insurance</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/fluency/48/motorcycle.png" alt="Bike" />
+        <p>Bike Insurance</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/fluency/48/delivery.png" alt="Commercial" />
+        <p>Commercial Vehicle</p>
+      </div>
     </div>
   </section>
 
-  <!-- Scroll to Top -->
-  <button id="scrollTopBtn">&#8679;</button>
+  <!-- Animated Stats -->
+  <section class="stats" style="background: #111827; color: #eee;">
+    <div style="display:flex;justify-content:center;gap:50px;flex-wrap:wrap;">
+      <div>
+        <h2 style="font-size: 36px; color: #00bfa6;">150+</h2>
+        <p>Happy Clients</p>
+      </div>
+      <div>
+        <h2 style="font-size: 36px; color: #00bfa6;">500+</h2>
+        <p>Policies Sold</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/917999276798?text=Hi%20Deepak%2C%20I%20need%20insurance%20help" class="float-whatsapp" target="_blank">
-    <img src="icons/whatsapp.svg" alt="WhatsApp" />
-  </a>
+  <!-- Lead Magnet Section -->
+  <section style="background:#1e1e2f;color:#fff;">
+    <h2>🎁 Get Your Free Insurance Checklist!</h2>
+    <p>Ensure you're covered from every angle. Download our free PDF checklist.</p>
+    <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" class="btn pulse">Download Now</a>
+  </section>
+
+  <!-- WhatsApp CTA -->
+  <section>
+    <h2>Need Guidance?</h2>
+    <p>Chat with Deepak Mishra on WhatsApp and get the best plan!</p>
+    <a href="https://wa.me/917999276798" class="btn">Chat on WhatsApp</a>
+  </section>
+
+  <!-- Google Form -->
+  <section style="background:#0d1117;">
+    <h2>Submit Your Details</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEcTgmzv8W5ZEr7PK8QoAE-TvH6H7DY-9i63k3L7fYwCH9aA/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
 
   <footer>
-    <p>© 2025 Deepak Mishra – Trusted Insurance Partner</p>
+    &copy; 2025 Deepak Mishra | Insurance Partner | Contact: 7999276798
   </footer>
 
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- WhatsApp Auto Message Script -->
   <script>
-    AOS.init();
+    let defaultMessage = "Hello Deepak! I'm interested in health or vehicle insurance plans.";
+    document.querySelectorAll("a[href*='wa.me']").forEach(btn => {
+      btn.href = "https://wa.me/917999276798?text=" + encodeURIComponent(defaultMessage);
+    });
   </script>
+
 </body>
 </html>
