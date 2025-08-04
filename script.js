@@ -1,11 +1,16 @@
-// Typewriter effect
-document.getElementById('typewriter').textContent = "Deepak Mishra – Insurance Expert";
+AOS.init();
 
-// Scroll to top
-const scrollBtn = document.getElementById("scrollTopBtn");
-window.onscroll = function() {
-  scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
-};
-scrollBtn.onclick = function() {
+const headlineText = "Deepak Mishra – Trusted Insurance Partner";
+let i = 0;
+function typeWriter() {
+  if (i < headlineText.length) {
+    document.getElementById("headline").innerHTML += headlineText.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+typeWriter();
+
+function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+}
