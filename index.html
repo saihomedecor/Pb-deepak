@@ -1,50 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Deepak Mishra – Trusted Insurance Partner</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Draw System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1 id="headline"></h1>
-    <p class="tagline">Health, Car, Bike – Get the Right Plan with the Right Guidance</p>
-  </header>
+  <div class="container">
+    <h1>🎉 Lucky Draw Entry 🎉</h1>
 
-  <main>
-    <section class="buttons" data-aos="fade-up">
-      <a href="https://wa.me/7999276798" class="btn glow">📲 Chat on WhatsApp</a>
-      <a href="https://forms.gle/XtKoWXCoNeUG2xxbA" class="btn glow" target="_blank">📝 Fill Insurance Info</a>
-      <a href="mailto:d.deep.m@gmail.com" class="btn glow">📧 Email Us</a>
-      <a href="tel:7999276798" class="btn glow">📞 Call Now</a>
-      <a href="vcard.vcf" class="btn glow" download>📁 Download vCard</a>
-      <button class="btn glow" onclick="navigator.share({title: 'Insurance Services', url: window.location.href})">📤 Share</button>
-    </section>
+    <form id="entryForm">
+      <input type="text" id="name" placeholder="Enter your Name" required>
+      <input type="tel" id="phone" placeholder="Enter your Phone Number" required>
+      <button type="submit">Submit Entry</button>
+    </form>
 
-    <section class="testimonial" data-aos="fade-up">
-      <h2>What Clients Say</h2>
-      <p>“Deepak helped me find the best car insurance at a great price. Very trustworthy!”</p>
-    </section>
+    <h2>Participants</h2>
+    <ul id="participantsList"></ul>
 
-    <section class="faq" data-aos="fade-up">
-      <h2>FAQs</h2>
-      <details>
-        <summary>Which insurance services do you offer?</summary>
-        <p>Health, Car, Bike, and Commercial Vehicle Insurance.</p>
-      </details>
-      <details>
-        <summary>How can I contact you?</summary>
-        <p>Via WhatsApp, Email, or Call — all buttons are on this page.</p>
-      </details>
-    </section>
-  </main>
+    <button id="pickWinnerBtn">🎲 Pick a Random Winner</button>
+    <h2 id="winner"></h2>
+  </div>
 
-  <a href="https://wa.me/7999276798" class="whatsapp-float" target="_blank">💬</a>
-  <button onclick="scrollToTop()" id="topBtn">⬆</button>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
