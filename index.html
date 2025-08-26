@@ -3,26 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucky Draw System</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Lucky Draw App</title>
 </head>
 <body>
-  <div class="container">
-    <h1>🎉 Lucky Draw Entry 🎉</h1>
+  <h1>🎉 Lucky Draw App 🎉</h1>
 
-    <form id="entryForm">
-      <input type="text" id="name" placeholder="Enter your Name" required>
-      <input type="tel" id="phone" placeholder="Enter your Phone Number" required>
-      <button type="submit">Submit Entry</button>
-    </form>
+  <form id="entryForm">
+    <input type="text" id="name" placeholder="Enter Name" required>
+    <input type="text" id="phone" placeholder="Enter Phone No." required>
+    <button type="submit">Submit Entry</button>
+  </form>
 
-    <h2>Participants</h2>
-    <ul id="participantsList"></ul>
+  <button id="drawBtn">Pick Winner</button>
+  <h2 id="winner"></h2>
 
-    <button id="pickWinnerBtn">🎲 Pick a Random Winner</button>
-    <h2 id="winner"></h2>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
